@@ -86,14 +86,6 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider uppercase">
             <Link
-              href="/"
-              className={`hover:text-amber-500 transition-colors ${
-                pathname === "/" ? "text-amber-500 font-semibold" : "text-foreground/80"
-              }`}
-            >
-              Experience
-            </Link>
-            <Link
               href="/about"
               className={`hover:text-amber-500 transition-colors ${
                 pathname === "/about" ? "text-amber-500 font-semibold" : "text-foreground/80"
@@ -232,15 +224,6 @@ export default function Header() {
           <div className={`md:hidden glass-panel border-t-0 border-x-0 w-full absolute left-0 py-6 px-6 flex flex-col gap-4 animate-fade-in-up shadow-xl transition-all duration-300 ${
             isScrolled ? "top-14" : "top-20"
           }`}>
-            <Link
-              href="/"
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-sm font-medium tracking-wider uppercase py-1 ${
-                pathname === "/" ? "text-amber-500 font-semibold" : "text-foreground"
-              }`}
-            >
-              Experience
-            </Link>
             <Link
               href="/about"
               onClick={() => setIsMenuOpen(false)}

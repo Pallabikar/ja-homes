@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { AuthProvider } from "./context/AuthContext";
 import SocialSidebar from "../components/SocialSidebar";
+import ScrollToTop from "../components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <AuthProvider>
           <ThemeProvider>
             <SocialSidebar />
+            <ScrollToTop />
             {children}
           </ThemeProvider>
         </AuthProvider>
