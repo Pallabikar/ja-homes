@@ -7,6 +7,7 @@ import { ArrowRight, Compass, Sparkles, X } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
+import TextType from "../components/TextType";
 
 interface Hotspot {
   id: number;
@@ -191,9 +192,16 @@ export default function Home() {
               <span className="text-amber-500 text-xs font-mono uppercase tracking-[0.4em] block">
                 Architectural Detailing
               </span>
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground tracking-wide font-light">
-                Interactive Material Tour
-              </h2>
+              <TextType
+                text="Interactive Material Tour"
+                as="h2"
+                className="text-3xl md:text-5xl font-serif text-foreground tracking-wide font-light"
+                typingSpeed={75}
+                showCursor={true}
+                cursorCharacter="|"
+                loop={false}
+                startOnVisible={true}
+              />
               <p className="text-muted text-sm md:text-base leading-relaxed font-light font-sans">
                 Hover or click on the interactive hotspots in the custom living room design to examine the craftsmanship, source materials, and smart technologies integrated into a typical JA home.
               </p>
@@ -415,9 +423,16 @@ export default function Home() {
 
         <div className="relative z-30 text-center flex flex-col items-center gap-6 max-w-4xl mx-auto">
           <span className="text-amber-500 text-xs font-mono uppercase tracking-[0.4em]">Next Steps</span>
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground tracking-wide font-light max-w-xl">
-            Craft Your Bespoke Residence
-          </h2>
+          <TextType
+            text="Craft Your Bespoke Residence"
+            as="h2"
+            className="text-3xl md:text-5xl font-serif text-foreground tracking-wide font-light max-w-xl"
+            typingSpeed={75}
+            showCursor={true}
+            cursorCharacter="|"
+            loop={false}
+            startOnVisible={true}
+          />
           <p className="text-muted text-sm md:text-base max-w-md font-light leading-relaxed font-sans">
             Navigate to our projects showcase to explore current structural completions or co-design your own architectural sanctuary.
           </p>
