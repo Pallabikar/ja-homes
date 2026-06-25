@@ -412,7 +412,7 @@ export default function Home() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-55"
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         >
           <source src="https://res.cloudinary.com/dtmqv7oqq/video/upload/v1782285983/Futuristic_city_skyline_at_night_202606241246_xqfvb1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
