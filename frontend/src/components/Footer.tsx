@@ -84,7 +84,8 @@ export default function Footer() {
           {/* MLS & Housing Compliance Badges */}
           <div className="flex items-center gap-3 shrink-0">
             <span className="border border-muted/30 px-2 py-0.5 rounded text-[8px] font-bold tracking-wider">MLS</span>
-            <svg className="w-5 h-5 fill-current opacity-50" viewBox="0 0 24 24" aria-hidden="true" title="Equal Housing Opportunity">
+            <svg className="w-5 h-5 fill-current opacity-50" viewBox="0 0 24 24" aria-hidden="true">
+              <title>Equal Housing Opportunity</title>
               <path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 5c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm5 9H7v-1.5c0-1.66 3.33-2.5 5-2.5s5 .84 5 2.5V17z"/>
             </svg>
           </div>
